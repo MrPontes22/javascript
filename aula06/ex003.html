@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition using javaScript</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #6767a7;
+            color: #fff;
+            font: normal 20pt arial;
+        }
+        h1 {             
+            color: yellow;        
+        }
+    </style>
+</head>
+<body>
+    <h1>Addition using javaScript</h1>
+    
+                    <!--The sign +(plus) is used as concatenated and addition --> <!-- How to solve this problem ? Answer = Number.parseInt() -->
+    <script>
+        var num1 = Number(window.prompt ('Type the first number to test')); // Command window.prompt() always returns string.
+        var num2 = Number(window.prompt ('type the second number to test')); // Command Number.parseInt(n) Convert string to Int type number.
+        var s = num1 + num2;                                                 // Command Number.parseFloat(n) Convert string to Float type number.
+        window.alert('The answer is : '+ String(s)); // s.toString(); // String(s) convert something to String type.
+
+        // number + number to addition and  String + String to concatenate.
+        // This is exactly why we need to convert.
+                   
+    </script>    
+</body>
+  
+</html>
