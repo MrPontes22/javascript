@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nationality system</title>
+    <style>
+        div#nationality { 
+            font: normal 20px areal;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Where are you from ?</h1>
+        <input type="text" name="" id="country" placeholder="Enter with your country">
+        <input type="button" value="submit" onclick="submit()">
+        <div id="nationality"></div>
+        <input type="number" name="" id="greencard" placeholder="Green card number">
+        <input type="button" value="submit">
+     <script>
+        function submit() {
+        var country_from = document.getElementById('country');
+        var nat = document.getElementById('div#nationality');
+        var origin =(country_from.value);
+        if (origin == 'USA'){
+            nationality.innerHTML =`You are from <strong>${origin}</strong> American citizen enter width your green card number into the box below.`;
+            
+        }else
+             nationality.innerHTML =`You are from <strong>${origin}</strong> and you don't have access !`
+        };
+     </script>   
+</body>
+</html>

@@ -25,10 +25,16 @@
         var num1 = Number(window.prompt ('Type the first number to test')); // Command window.prompt() always returns string.
         var num2 = Number(window.prompt ('type the second number to test')); // Command Number.parseInt(n) Convert string to Int type number.
         var s = num1 + num2;                                                 // Command Number.parseFloat(n) Convert string to Float type number.
-        window.alert('The answer is : '+ String(s)); // s.toString(); // String(s) convert something to String type.
+        window.alert(`A soma de ${num1} + ${num2} é igual a : ${s}`);// s.toString(); // String(s) convert something to String type.
 
         // number + number to addition and  String + String to concatenate.
-        // This is exactly why we need to convert.
+        // So, we need to convert.
+
+        // How do we know how long some string is ? 
+        // Example: var s ='JavaScript' 
+        //s.length > Show length of string.
+        //s.toUpperCase() Turn some string into Uppercase.
+        //s.toLowerCase() Turn some string into lowercase.
                    
     </script>    
 </body>
