@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora JS</title>
+</head>
+<body>
+    <div id="showResult">Resultado:</div>
+    
+</body>
+    <script>
+        var number1 = Number (window.prompt ('Digite um número '))
+        if (number1 <=0 ){
+            window.alert('O número precisa ser inteiro e positivo')
+        }       
+        while (number1 <=0 ) {
+            number1 = window.prompt ('Digite um número inteiro e positivo')
+        }
+        var number2 = window.prompt ('Digite o segundo número')
+        if (number2 <=0 ){
+            window.alert('O número precisa ser inteiro e positivo')
+        }
+        while (number2 <=0 ) {
+            number2 = window.prompt ('Digite um número inteiro e positivo')
+        }
+        
+        var divResult = document.getElementById('showResult')
+
+        var resultado = calcular(number1, number2)
+
+        divResult.innerHTML += resultado;
+
+        function calcular() {
+            var calc =0;
+            calc = number1 / number2;
+            return calc;
+        }
+        
+        
+    </script>
+</html>

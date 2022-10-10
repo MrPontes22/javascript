@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nationality system</title>
-    <style>
-        div#nationality { 
-            font: normal 20px areal;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
+    <header> <h1>País de origem</h1></header>
+<section>
+    <div>
     <h1>Where are you from ?</h1>
-        <input type="text" name="" id="country" placeholder="Enter with your country">
+        Enter Your Country :<input type="text" name="" id="country" placeholder="Enter with your country">
         <input type="button" value="submit" onclick="submit()">
         <div id="nationality"></div>
-        <input type="number" name="" id="greencard" placeholder="Green card number">
+        Green Card Number:<input type="number" name="" id="greencard" placeholder="Green card number">
         <input type="button" value="submit">
+    </div>
+</section>
+<footer>
+    <p>&copy; DiPontes</p>
+</footer>
      <script>
         function submit() {
         var country_from = document.getElementById('country');
         var nat = document.getElementById('div#nationality');
         var origin =(country_from.value);
-        if (origin == 'USA'){
-            nationality.innerHTML =`You are from <strong>${origin}</strong> American citizen enter width your green card number into the box below.`;
+        if (origin == 'USA' || origin == 'usa' || origin == 'United States') {
+            nationality.innerHTML =`You are  <strong>${origin}</strong> American citizen, enter width your green card number into the box below.`;
             
         }else
-             nationality.innerHTML =`You are from <strong>${origin}</strong> and you don't have access !`
+             nationality.innerHTML =`You are from <strong>${origin}.</strong> Sorry, but you don't have access !`
         };
-     </script>   
+     </script>
+        
 </body>
 </html>

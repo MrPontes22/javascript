@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor em JS</title>
+</head>
+<body>
+    <div id="showResult">Resultado:</div>
+    
+</body>
+    <script>
+        var numeros = []
+
+        numeros[0] = solicitaPrimeiroNumero();
+        numeros[1] = solicitaSegundoNumero();
+
+        var resultadoDivisao = divida(numeros);
+        var res = document.getElementById('showResult');
+        res.innerHTML = `O resultado da divisão é : ${resultadoDivisao}`
+
+        function solicitaPrimeiroNumero(){
+            var number1 = window.prompt('Digite o primeiro número');
+            if (number1 <=0){
+            alert('O número deve ser inteiro e positivo !');
+            return solicitaPrimeiroNumero();
+        }else{
+            return number1;
+        }
+        }       
+
+        function solicitaSegundoNumero(){
+            var number2 = window.prompt('Digite o segundo número');
+            if (number2 <=0){
+            alert('O número deve ser inteiro e positivo !')
+            return solicitaSegundoNumero();
+        }else{
+            return number2;
+        }
+
+        }
+        function divida(numeros){
+            var resultado =0;
+            resultado = numeros[0] / numeros[1];
+            return resultado; 
+        }
+        
+        
+    </script>
+</html>
