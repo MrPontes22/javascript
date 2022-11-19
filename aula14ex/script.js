@@ -1,10 +1,10 @@
-var inicio = Number(document.querySelector('input#inic'))
-var fim = Number(document.querySelector('input#fim'))
+var start = Number(document.querySelector('input#start'))
+var end = Number(document.querySelector('input#end'))
 var res = document.querySelector('div#result')
 
 
 function contar(){
-    for(inicio = ''; inicio < fim; inicio++);
+    for(start = ''; start < end; start++);
     
 }
 result.innerHTML = ``
