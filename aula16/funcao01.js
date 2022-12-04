@@ -5,5 +5,6 @@ function parimpar(n){
         return 'impar !'
     }    
 }
-// let res = parimpar(11)
-console.log(parimpar(224))
+let res = parimpar(11)
+console.log(res)
+// console.log(parimpar(224))
